@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Laboratorio 2
+	</title>
+</head>
+<body>
+
+	<p>Estudiante: Angelo Guillen		Cedula: 8-943-591</p>
+	<p>1. ¿Qué es Javascript y en qué se asemeja a Java?</p>
+	<p>Javascript es utilizado por programadores de todo el mundo para crear contenido web dinámico e interactivo, como aplicaciones y navegadores.</p> <br><br>
+
+	<p>2. Declarar dos variables con la palabra reservada "var", imprimir el resultado de las operaciones de "Suma", "Resta", "Multiplicación" y "División" en la consola. Las variables pueden ser estáticas.</p>
+	<script>
+		var a = 2;
+		var b = 5;
+
+		console.log(`La suma de ${a} + ${b} = ${a+b}`);
+		console.log(`La resta de ${a} - ${b} = ${a-b}`);
+		console.log(`La multiplicacion de ${a} * ${b} = ${a*b}`);
+		console.log(`La division de ${a} / ${b} = ${a/b}`);
+	</script>
+
+	<p>3. Declarar dos variables con la palabra reservada "let", imprimir la concatenación de ellas.</p>
+	<script>
+		let word1 = "Hola ";
+		let word2 = "Mundo.";
+		let joined = word1 + word2;
+
+		console.log(joined);
+	</script>
+
+	<p>4. Declarar dos variables con la palabra reservada "const", imprimir cuál es el tipo de dato de esa variable.</p>
+	<script>
+		const x = typeof("palabra");
+		const y = typeof(9);
+
+		console.log(`El tipo de variable de a es ${x}`);
+		console.log(`El tipo de variable de b es ${y}`);
+	</script>
+
+	<p>5. Declarar una variable tipo Objecto, colocar 4 llaves dentro de él que contengan un entero, un string, un booleano y un objeto vacío, en ese mismo orden.</p>
+	<script>
+		var r = {
+			entero: 43,
+			cadena: "carro",
+			booleano: false,
+			objeto: {}
+		};
+		
+		console.log(r);
+	</script>
+
+</body>
+</html>
