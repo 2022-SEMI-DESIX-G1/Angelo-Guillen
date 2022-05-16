@@ -1,0 +1,62 @@
+<link href="http://fonts.cdnfonts.com/css/arial-nova" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Parcial #2</title>
+</head>
+<body>
+	<section>
+		<div class="pokemon-input-card">
+			<div class="pokeapi">
+				<img src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png">
+			</div>
+
+			<h2>Buscador de Pokemones</h2>
+			<p>Busca desde Pokemones hasta habilidades de los mismos</p>
+
+			<div class="pokemon-finder">
+				<form id="pokemon-finder-form">
+					<table>
+						<tr>
+							<td>
+								<p><b>Buscar</b></p>
+							</td>
+							<td>
+								<p><b>Tipo de Busqueda</b></p>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<input id="pokemon-finder-query" type="text">
+							</td>
+							<td>
+								<select id="pokemon-finder-search-type">
+									<option value="pokemon">Pokemon</option>
+									<option value="ability">Ability</option>
+								</select>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<button type="submit">Buscar</button>
+							</td>
+							<td>
+								<button type="submit">Buscar</button>
+							</td>
+						</tr>	
+					</table>
+				</form>
+			</div>
+		</div>
+	</section>
+	<section id="pokemon-finder-response"></section>
+	<script src="utils.js"></script>
+	<script src="index.js"></script>
+	<link href="Index.css" rel="stylesheet" type="text/css">
+</body>
+</html>
