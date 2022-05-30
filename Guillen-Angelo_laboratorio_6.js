@@ -1,3 +1,5 @@
+const http = require('http');
+
 let fibonacci = function(n) {
 	if (n === 1) {
 		return [0, 1];
@@ -8,4 +10,10 @@ let fibonacci = function(n) {
 	}
 };
 
-console.log(fibonacci(5));
+const server=http.createServer((req,res)=>{
+  res.status=200;
+  res.setHeader('Content-Type','text/plain');
+});
+server.listen(3000,()=>{
+  console.log(fibonacci(5));
+});
